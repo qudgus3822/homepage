@@ -1,3 +1,9 @@
 [submodule "homepage-frontend"]
 	path = homepage-frontend
 	url = https://github.com/qudgus3822/homepage-frontend.git
+[submodule "homepage-cms"]
+	path = homepage-cms
+	url = https://github.com/qudgus3822/homepage-cms.git
+[submodule "homepage-backend"]
+	path = homepage-backend
+	url = https://github.com/qudgus3822/homepage-backend.git
