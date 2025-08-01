@@ -1,0 +1,3 @@
+[submodule "homepage-frontend"]
+	path = homepage-frontend
+	url = https://github.com/qudgus3822/homepage-frontend.git
