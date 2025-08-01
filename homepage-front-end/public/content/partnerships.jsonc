@@ -1,0 +1,76 @@
+{
+  // 파트너십 섹션 관련 데이터
+  "partnerships": {
+    "sectionTitle": "함께 성장한",
+    "titleHighlight": "파트너들", // 강조할 부분
+    "subtitle": "다양한 분야의 파트너들과 함께 SW 개발 교육의 새로운 표준을 만들어가고 있습니다",
+    
+    // 성과 지표들
+    "achievements": [
+      { 
+        "icon": "CheckCircle", 
+        "label": "4,000+ 개발자 교육 완료", 
+        "color": "text-brand-blue" 
+      },
+      { 
+        "icon": "Star", 
+        "label": "평균 만족도 4.8/5.0", 
+        "color": "text-brand-orange" 
+      },
+      { 
+        "icon": "Users", 
+        "label": "100+ 기업 파트너십", 
+        "color": "text-brand-success" 
+      },
+      { 
+        "icon": "GraduationCap", 
+        "label": "50+ 대학교 도입", 
+        "color": "text-brand-red" 
+      }
+    ],
+    
+    // 파트너 로고 및 정보
+    "partnerLogos": [
+      { "name": "hunet", "category": "주요 파트너" },
+      { "name": "KT", "category": "주요 파트너" },
+      { "name": "AIVLE", "category": "주요 파트너" },
+      { "name": "Global Knowledge", "category": "글로벌 파트너" },
+      { "name": "ETEVERS", "category": "기술 파트너" },
+      { "name": "D.SHARE", "category": "개발 파트너" },
+      { "name": "spigen", "category": "기업 클라이언트" },
+      { "name": "EZEN ACADEMY", "category": "교육기관" },
+      { "name": "HYBE", "category": "기업 클라이언트" },
+      { "name": "wanted gigs", "category": "채용 플랫폼" },
+      { "name": "KMA 한국능률협회", "category": "교육기관" },
+      { "name": "한국과학창의재단", "category": "공공기관" },
+      { "name": "BUN SOFTWARE MAESTRO", "category": "정부 프로그램" },
+      { "name": "KAIST", "category": "대학교" },
+      { "name": "KAIST교육원", "category": "교육기관" },
+      { "name": "이데일리", "category": "미디어" },
+      { "name": "MIDAS", "category": "기업 클라이언트" },
+      { "name": "한국폴리텍대학", "category": "교육기관" }
+    ],
+    
+    "partnerSectionTitle": "신뢰받는 파트너사",
+    
+    // 고객 추천사
+    "testimonial": {
+      "badgeText": "Customer Success Story",
+      "company": "KT Aivle School",
+      "role": "교육 운영팀",
+      "content": "모두의코딩의 CodeLearn 플랫폼 덕분에 수강생들의 학습 효과가 크게 향상되었습니다. 특히 실시간 상호작용 기능과 개인별 맞춤 피드백 시스템이 교육 품질 향상에 핵심적인 역할을 했습니다.",
+      
+      "metrics": [
+        { "label": "학습 만족도", "value": "95%" },
+        { "label": "완주율", "value": "87%" },
+        { "label": "취업 성공률", "value": "92%" }
+      ]
+    },
+    
+    // 수상 관련
+    "recognition": {
+      "icon": "Star",
+      "text": "과학기술의 날 국무총리 표창 수상"
+    }
+  }
+}

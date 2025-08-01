@@ -1,0 +1,84 @@
+{
+  // 메인 페이지 히어로 섹션 관련 텍스트
+  "hero": {
+    "badge": "2016년부터 9년간 검증된 솔루션", // 상단 배지 텍스트
+    "title": "SW개발자의 모든 여정을 함께합니다", // 메인 제목
+    "titleHighlight": ["SW개발자", "여정", "함께"], // 강조할 단어들
+    "subtitle": "2016년부터 9년간, 코딩교육부터 SW개발역량진단까지 혁신적인 솔루션으로 개발자 성장을 지원해온 휴넷 모두의코딩입니다", // 부제목
+    "subtitleHighlight": [
+      "2016년부터 9년간",
+      "혁신적인 솔루션",
+      "휴넷 모두의코딩"
+    ], // 부제목에서 강조할 단어들
+    "ctaButtons": {
+      "primary": "솔루션 둘러보기", //  버튼 텍스트
+      "secondary": "무료 상담 신청" //  버튼 텍스트
+    },
+    "achievements": [
+      // 성과 지표들
+      { "label": "4.8/5.0", "description": "고객 만족도" },
+      { "label": "4,000+", "description": "교육 완료" },
+      { "label": "9년", "description": "검증된 경험" }
+    ],
+    "dashboard": {
+      // 대시보드 관련 텍스트
+      "title": "실시간 개발자 역량 대시보드",
+      "subtitle": "AI 기반 종합 분석 결과",
+      "skillMetrics": [
+        // 스킬 측정 항목들
+        { "label": "코딩 역량", "value": 87 },
+        { "label": "문제 해결", "value": 92 },
+        { "label": "협업 능력", "value": 78 },
+        { "label": "학습 진도", "value": 95 }
+      ],
+      "codeQuality": {
+        // 코드 품질 관련
+        "title": "실시간 코드 품질",
+        "grade": "A+",
+        "gradeLabel": "코드 품질",
+        "coverage": "92%",
+        "coverageLabel": "테스트 커버리지"
+      },
+      "growth": {
+        // 성장 추세 관련
+        "title": "성장 추세",
+        "period": "지난 30일",
+        "percentage": "+15%"
+      },
+      "trustIndicators": [
+        // 신뢰 지표들
+        { "rating": "4.8/5.0" },
+        { "award": "국무총리 표창" }
+      ],
+      "awardBadge": "과학기술의 날 표창" // 수상 배지
+    },
+    "scrollIndicator": "더 많은 정보 보기" // 스크롤 안내 텍스트
+  },
+
+  // 상단 헤더 네비게이션 관련 텍스트
+  "header": {
+    "logo": "모두의코딩", // 로고 텍스트
+    "logoSubtext": "hunet", // 로고 서브텍스트
+    "navigation": [
+      // 네비게이션 메뉴 항목들
+      { "id": "home", "label": "Home" },
+      { "id": "barcode", "label": "BARCODE" },
+      { "id": "codelearn", "label": "CodeLearn" },
+      { "id": "codejourney", "label": "CodeJourney" },
+      { "id": "contact", "label": "문의" }
+    ],
+    "ctaButtons": {
+      // 헤더 버튼들
+      "download": "솔루션 소개서", // 다운로드 버튼
+      "downloadLoading": "다운로드 중...", // 로딩 상태 텍스트
+      "contact": "도입문의" // 문의 버튼
+    }
+  },
+
+  // 공통으로 사용되는 텍스트들
+  "common": {
+    "companyName": "휴넷 모두의코딩", // 회사명
+    "loading": "로딩 중...", // 로딩 메시지
+    "error": "오류가 발생했습니다" // 에러 메시지
+  }
+}

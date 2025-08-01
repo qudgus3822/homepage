@@ -1,0 +1,21 @@
+{
+  // 상단 헤더 네비게이션 관련 텍스트
+  "logo": "모두의코딩", // 로고 텍스트
+  "logoSubtext": "hunet", // 로고 서브텍스트
+  
+  "navigation": [
+    // 네비게이션 메뉴 항목들
+    { "id": "home", "label": "Home" },
+    { "id": "barcode", "label": "BARCODE" },
+    { "id": "codelearn", "label": "CodeLearn" },
+    { "id": "codejourney", "label": "CodeJourney" },
+    { "id": "contact", "label": "문의" }
+  ],
+  
+  "ctaButtons": {
+    // 헤더 버튼들
+    "download": "솔루션 소개서", // 다운로드 버튼
+    "downloadLoading": "다운로드 중...", // 로딩 상태 텍스트
+    "contact": "도입문의" // 문의 버튼
+  }
+}

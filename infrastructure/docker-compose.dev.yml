@@ -1,0 +1,76 @@
+# 2025-07-30, 김병현 수정 - 개발환경용 Docker Compose 설정 (소스 실시간 반영)
+services:
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: myapp
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # 백엔드 서비스 (NestJS) - 개발환경
+  backend:
+    build:
+      context: ../homepage-back-end
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8001:3000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../homepage-back-end:/app # 소스코드 실시간 반영
+      - /app/node_modules # node_modules는 컨테이너 내부 사용
+    depends_on:
+      - postgres
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  # 프론트엔드 서비스 (React + Vite) - 개발환경
+  frontend:
+    build:
+      context: ../homepage-front-end
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8000:5173" # Vite 개발 서버 포트
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../homepage-front-end:/app # 소스코드 실시간 반영
+      - /app/node_modules # node_modules는 컨테이너 내부 사용
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    restart: unless-stopped
+
+  cms:
+    build:
+      context: ../homepage-cms
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8002:5173" # CMS 개발 서버 포트
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ../homepage-cms:/app # 소스코드 실시간 반영
+      - /app/node_modules # node_modules는 컨테이너 내부 사용
+    depends_on:
+      - backend
+    networks:
+      - app-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,15 @@
+# 2025-07-30, 김병현 수정 - 프론트엔드 개발환경용 Dockerfile
+FROM node:20-alpine
+
+# 작업 디렉토리 설정
+WORKDIR /app
+
+# package.json과 package-lock.json 복사하여 의존성 설치
+COPY package*.json ./
+RUN npm install
+
+# 포트 5173 노출 (Vite 개발 서버)
+EXPOSE 5173
+
+# 개발 서버 시작 (호스트 0.0.0.0으로 바인딩)
+CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
