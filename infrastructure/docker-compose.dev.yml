@@ -18,14 +18,14 @@ services:
   # 백엔드 서비스 (NestJS) - 개발환경
   backend:
     build:
-      context: ../homepage-back-end
+      context: ../homepage-backend
       dockerfile: Dockerfile.dev
     ports:
       - "8001:3000"
     environment:
       - NODE_ENV=development
     volumes:
-      - ../homepage-back-end:/app # 소스코드 실시간 반영
+      - ../homepage-backend:/app # 소스코드 실시간 반영
       - /app/node_modules # node_modules는 컨테이너 내부 사용
     depends_on:
       - postgres
@@ -36,14 +36,14 @@ services:
   # 프론트엔드 서비스 (React + Vite) - 개발환경
   frontend:
     build:
-      context: ../homepage-front-end
+      context: ../homepage-frontend
       dockerfile: Dockerfile.dev
     ports:
       - "8000:5173" # Vite 개발 서버 포트
     environment:
       - NODE_ENV=development
     volumes:
-      - ../homepage-front-end:/app # 소스코드 실시간 반영
+      - ../homepage-frontend:/app # 소스코드 실시간 반영
       - /app/node_modules # node_modules는 컨테이너 내부 사용
     depends_on:
       - backend
